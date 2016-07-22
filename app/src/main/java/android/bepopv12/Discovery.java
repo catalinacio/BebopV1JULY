@@ -1,44 +1,15 @@
 package android.bepopv12;
 
 import android.content.ComponentName;
-import android.content.Context;
-import android.content.Intent;
 import android.content.ServiceConnection;
 import android.os.IBinder;
-import android.support.v7.app.AppCompatActivity;
-import android.os.Bundle;
-import android.view.View;
-import android.widget.Button;
-import android.widget.TextView;
 
 import com.parrot.arsdk.ardiscovery.ARDiscoveryService;
 
-public class BebopActivity extends AppCompatActivity {
-    Button clickButton;
-    TextView showText;
-    @Override
-    protected void onCreate(Bundle savedInstanceState) {
-        super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_bebop);
-            init();
-        }
-
-    private void init() {
-        clickButton=(Button) findViewById(R.id.btn_click);
-        showText=(TextView)findViewById(R.id.textView);
-    }
-
-    public void showText(View view) {
-         String string="123";
-
-        if(showText.getText().toString().contains(string))
-            showText.setText("hello world");
-        else
-            showText.setText(string);
-    }
-
 /**
- *  DISCCOVERY ACTIITY*/
+ * Created by catalinacio on 22.07.2016.
+ */
+public class Discovery {
 
     private ARDiscoveryService mArdiscoveryService;
     private ServiceConnection mArdiscoveryServiceConnection;
