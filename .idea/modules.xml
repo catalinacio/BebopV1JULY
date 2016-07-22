@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/BepopV1.22.iml" filepath="$PROJECT_DIR$/BepopV1.22.iml" />
+      <module fileurl="file://$PROJECT_DIR$/BebopV1JULY.iml" filepath="$PROJECT_DIR$/BebopV1JULY.iml" />
       <module fileurl="file://$PROJECT_DIR$/app/app.iml" filepath="$PROJECT_DIR$/app/app.iml" />
     </modules>
   </component>

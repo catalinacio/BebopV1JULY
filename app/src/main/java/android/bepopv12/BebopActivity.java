@@ -26,6 +26,13 @@ public class BebopActivity extends AppCompatActivity {
     private void init() {
         clickButton=(Button) findViewById(R.id.btn_click);
         showText=(TextView)findViewById(R.id.textView);
+
+        clickButton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                //call method for iniyt conn showText(v);
+            }
+        });
     }
 
     public void showText(View view) {

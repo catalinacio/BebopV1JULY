@@ -1,6 +1,7 @@
 package android.bepopv12;
 
 import android.content.ComponentName;
+import android.content.Intent;
 import android.content.ServiceConnection;
 import android.os.IBinder;
 
@@ -40,8 +41,8 @@ public class Discovery {
         if (mArdiscoveryService == null)
         {
             // if the discovery service doesn't exists, bind to it
-            Intent i = new Intent(getApplicationContext(), ARDiscoveryService.class);
-            getApplicationContext().bindService(i, mArdiscoveryServiceConnection, Context.BIND_AUTO_CREATE);
+          //  Intent i = new Intent(getApplicationContext(), ARDiscoveryService.class);
+        //    getApplicationContext().bindService(i, mArdiscoveryServiceConnection, Context.BIND_AUTO_CREATE);
         }
         else
         {
